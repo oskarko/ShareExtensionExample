@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="customCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="LUk-Ex-M7x" customClass="CustomCell" customModule="ShareExtensions" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LUk-Ex-M7x" id="Qcl-Pk-XvG">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="npD-MK-C8D">
+                        <rect key="frame" x="16" y="12" width="343" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="npD-MK-C8D" firstAttribute="trailing" secondItem="Qcl-Pk-XvG" secondAttribute="trailingMargin" id="MN2-Op-dCO"/>
+                    <constraint firstItem="npD-MK-C8D" firstAttribute="bottom" secondItem="Qcl-Pk-XvG" secondAttribute="bottomMargin" constant="1" id="OPZ-pW-CHC"/>
+                    <constraint firstItem="npD-MK-C8D" firstAttribute="leading" secondItem="Qcl-Pk-XvG" secondAttribute="leadingMargin" id="Rp9-AC-Apb"/>
+                    <constraint firstItem="npD-MK-C8D" firstAttribute="top" secondItem="Qcl-Pk-XvG" secondAttribute="topMargin" constant="1" id="onJ-Lx-BYx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textLbl" destination="npD-MK-C8D" id="3vg-9N-gft"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </tableViewCell>
+    </objects>
+</document>
